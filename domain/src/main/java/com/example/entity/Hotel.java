@@ -13,15 +13,15 @@ public class Hotel {
     private long id;
     private String name;
     private String classification;
-    private String isOpen;
+    private String status;
 
     public Hotel() {
     }
 
-    public Hotel(String name, String classification, String isOpen){
+    public Hotel(String name, String classification, String status){
         this.name = name;
         this.classification = classification;
-        this.isOpen = isOpen;
+        this.status = status;
     }
 
     public long getId() {
@@ -48,11 +48,11 @@ public class Hotel {
         this.classification = classification;
     }
 
-    public String isOpen() {
-        return isOpen;
+    public String getStatus() {
+        return status;
     }
 
-    public void setOpen(String open) {
-        isOpen = open;
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
