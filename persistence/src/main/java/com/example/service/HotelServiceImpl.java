@@ -36,6 +36,7 @@ public class HotelServiceImpl implements HotelService {
         if (existingHotel != null) {
             existingHotel.setName(updatedHotel.getName());
             existingHotel.setClassification(updatedHotel.getClassification());
+            existingHotel.setStatus(updatedHotel.getStatus());
             // Update other fields as necessary
             return hotelRepository.save(existingHotel);
         }
