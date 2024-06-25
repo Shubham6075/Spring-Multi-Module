@@ -35,7 +35,8 @@ public class HotelController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteHotel(@PathVariable Long id) {
+    public String deleteHotel(@PathVariable Long id) {
         hotelService.deleteHotel(id);
+        return "Hotel with ID " + id + " has been deleted successfully.";
     }
 }
